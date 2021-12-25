@@ -5,8 +5,7 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.action_chains import ActionChains
 import time
 
-def unifran():    
-
+def unifran():
     #abrir o navegador
     s = Service('C:\\Users\\Eduardo\Documents\\GitHub\\bot-loginSites\\chromedriver.exe')
     driver = webdriver.Chrome(service=s)
@@ -16,7 +15,7 @@ def unifran():
     time.sleep(3)
     #Colocar o CPF e a senha
     actions = ActionChains(driver) 
-    actions.send_keys(Keys.TAB, '15684409601', Keys.TAB, '98842')
+    actions.send_keys(Keys.TAB, 'Seu CPF', Keys.TAB, 'Sua senha')
     actions.perform()
 
     #Apertar o botão para acessar a área do aluno
